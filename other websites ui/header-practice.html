@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>header practice</title>
+
+    <style>
+
+      p, button{
+        margin:0;
+      }
+
+      .header{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-between;
+        height: 50px;
+        background-color:rgb(130, 74, 186);
+        /* width: 900px; */
+      }
+
+      .search-bar{
+        border: none;
+        border-radius: 20px;
+        padding-left: 20px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-right: 20px;
+        width: 100%
+      }
+
+      .search-bar:focus, input:focus{
+        outline:none;
+      }
+
+      .download-button{
+        color: rgb(232, 232, 232);
+        border:solid;
+        border-width: 1px;
+        border-radius: 2px;
+        border-color: rgb(232, 232, 232);
+        background-color: rgb(130, 74, 186);
+        padding-left: 13px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-right: 13px;
+        transition: opacity 0.15s;
+      }
+
+      .download-button:hover{
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .download-button:active{
+        opacity: 0.7;
+        cursor: pointer;
+      }
+
+      .left-section{
+        font-family:Arial;
+        font-weight: bold;
+        color: white;
+        margin-left: 20px;
+        width: 130px;
+      }
+
+      .center-section{
+        flex: 1;
+        max-width: 800px;
+      }
+
+      .right-section{
+        margin-left: 100px;
+        width: 100px;
+      }
+
+
+
+    </style>
+
+  </head>
+
+  <body>
+    <div class="header">
+
+      <div class="left-section">
+        <p>
+          Home
+        </p>
+      </div>
+
+      <div class="center-section">
+        <input class="search-bar" type="text" placeholder="Search">
+      </div>
+
+      <div class="right-section">
+        <button class="download-button">
+          Download
+        </button>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

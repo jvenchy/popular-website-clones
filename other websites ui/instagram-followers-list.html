@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title> ig followers exercise</title>
+
+  <style>
+    p, button{
+      margin: 0;
+      font-family: Arial;
+      font-size: 20px
+    }
+
+    .follow-box{
+      display: flex;
+      flex-direction: column;
+      row-gap: 2px;
+    }
+
+    .profile-pic{
+      width: 75px;
+      height: 75px;
+      object-fit: cover;
+      border-radius: 50px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .profile-pic:hover{
+      cursor:pointer;
+    }
+
+    .follow-button{
+      border:none;
+      font-weight: bold;
+      background-color: rgb(30, 165, 255);
+      color: white;
+      border-radius: 5px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 15px;
+      padding-left: 15px;
+      transition: opacity 0.15s;
+    }
+
+    .follow-button:hover{
+      opacity: 0.8;
+      cursor: pointer;
+    }
+
+    .follow-button:active{
+      opacity: 0.6;
+      cursor: pointer;
+    }
+
+    .center-info{
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+      flex: 1;
+    }
+
+    .left-info{
+      width: 100px;
+    }
+
+    .right-info{
+      justify-content: right;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .follow-info{
+      display: flex;
+      width: 500px;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="follow-box">
+
+    <div class="follow-info">
+
+      <div class="left-info">
+        <img  class="profile-pic" src="images/naruto-profile-pictures-392d311ouj6b7ggq.jpeg">
+      </div>
+
+      <div class="center-info">
+        <p style="font-weight: bold;">Naruto Uzumaki</p>
+        <p style="color:rgb(150, 149, 149)">7th Hokage</p>
+        <p style="color:rgb(150, 149, 149); font-size: 18px;">Popular</p>
+      </div>
+
+      <div class="right-info">
+        <button class="follow-button">
+          Follow
+        </button>
+      </div>
+    </div>
+
+    <div class="follow-info">
+
+      <div class="left-info">
+        <img  class="profile-pic" src="images/yuji.jpeg">
+      </div>
+
+      <div class="center-info">
+        <p style="font-weight: bold;">yuji</p>
+        <p style="color:rgb(150, 149, 149)">sukuna's father 🤣</p>
+        <p style="color:rgb(150, 149, 149); font-size: 18px;">Popular</p>
+      </div>
+
+      <div class="right-info">
+        <button class="follow-button">
+          Follow
+        </button>
+      </div>
+    </div>
+
+    <div class="follow-info">
+
+      <div class="left-info">
+        <img  class="profile-pic" src="images/gojo.webp">
+      </div>
+
+      <div class="center-info">
+        <p style="font-weight: bold;">gojo satoru</p>
+        <p style="color:rgb(150, 149, 149)">shadow wizard money gang</p>
+        <p style="color:rgb(150, 149, 149); font-size: 18px;">Popular</p>
+      </div>
+
+      <div class="right-info">
+        <button class="follow-button">
+          Follow
+        </button>
+      </div>
+    </div>
+
+
+
+  </div>
+
+</body>
+
+</html>

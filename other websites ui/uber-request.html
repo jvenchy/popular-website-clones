@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title> Uber Request</title>
+
+    <style>
+      p{font-family: Arial}
+
+      .title{
+        margin-top: 5px;
+        display:block;
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+
+      .pickup{
+        display:block;
+        border:none;
+        width: 300px;
+        background-color:rgb(241, 241, 240);
+        margin-bottom: 5px;
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-left: 15px;
+      }
+
+      .dropoff{
+        display:block;
+        border:none;
+        width: 300px;
+        background-color:rgb(241, 241, 240);
+        margin-bottom: 5px;
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-left: 15px;
+        margin-bottom: 20px;
+      }
+
+      .request{
+        display:inline-block;
+        background-color: black;
+        color: white;
+        border:none;
+        margin-bottom: 5px;
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        transition: opacity 0.15s;
+      }
+
+      .schedule{
+        display:inline-block;
+        border:none;
+        background-color:rgb(241, 241, 240);
+        margin-bottom: 5px;
+        margin-left: 10px;
+        padding-top:12px;
+        padding-bottom:12px;
+        padding-left: 15px;
+        padding-right: 15px;
+        transition: opacity 0.15s;
+      }
+
+      .request:hover, 
+      .schedule:hover{
+        cursor: pointer;
+        opacity: 0.8;
+      }
+
+
+    </style>
+
+  </head>
+  <body>
+    <p class="title">
+      Request a ride now
+    </p>
+
+    <input class="pickup" type="text" placeholder="Enter pickup location">
+    <input class="dropoff" type="text" placeholder="Enter destination">
+    
+    <button class="request">
+      Request Now
+    </button>
+
+    <button class="schedule">
+      Schedule for later
+    </button>
+  </body>
+
+</html>
